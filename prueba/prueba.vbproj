@@ -73,6 +73,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion_ODBC.vb" />
+    <Compile Include="DGVPaginado.Designer.vb">
+      <DependentUpon>DGVPaginado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DGVPaginado.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DGVPaginado.resx">
+      <DependentUpon>DGVPaginado.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>

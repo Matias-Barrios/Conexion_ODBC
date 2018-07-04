@@ -30,7 +30,7 @@ Module Conexion_ODBC
         cnx_string = "
         Driver={IBM INFORMIX ODBC DRIVER};
         Database=miBD;
-        Host=45.79.7.217;
+        Host=192.168.247.128;
         Server=miServidor;
         Service=50000;
         Protocol=onsoctcp;
@@ -44,7 +44,7 @@ Module Conexion_ODBC
     End Function
 
     Public Function PASSWORD() As String
-        Return "informix"
+        Return "1234"
     End Function
 
 End Module

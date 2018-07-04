@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,51 +20,29 @@ Partial Class Form1
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.dgvDocentes = New System.Windows.Forms.DataGridView()
-        Me.dgvGrupos = New System.Windows.Forms.DataGridView()
-        CType(Me.dgvDocentes, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.dgvGrupos, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.dgv_personalizado = New prueba.DGVPaginado()
         Me.SuspendLayout()
         '
-        'dgvDocentes
+        'dgv_personalizado
         '
-        Me.dgvDocentes.AllowUserToAddRows = False
-        Me.dgvDocentes.AllowUserToDeleteRows = False
-        Me.dgvDocentes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvDocentes.Location = New System.Drawing.Point(12, 333)
-        Me.dgvDocentes.Name = "dgvDocentes"
-        Me.dgvDocentes.ReadOnly = True
-        Me.dgvDocentes.Size = New System.Drawing.Size(869, 208)
-        Me.dgvDocentes.TabIndex = 0
-        '
-        'dgvGrupos
-        '
-        Me.dgvGrupos.AllowUserToAddRows = False
-        Me.dgvGrupos.AllowUserToDeleteRows = False
-        Me.dgvGrupos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvGrupos.Location = New System.Drawing.Point(12, 34)
-        Me.dgvGrupos.Name = "dgvGrupos"
-        Me.dgvGrupos.ReadOnly = True
-        Me.dgvGrupos.Size = New System.Drawing.Size(869, 277)
-        Me.dgvGrupos.TabIndex = 1
+        Me.dgv_personalizado.Location = New System.Drawing.Point(26, 30)
+        Me.dgv_personalizado.Name = "dgv_personalizado"
+        Me.dgv_personalizado.Size = New System.Drawing.Size(845, 444)
+        Me.dgv_personalizado.TabIndex = 0
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(893, 561)
-        Me.Controls.Add(Me.dgvGrupos)
-        Me.Controls.Add(Me.dgvDocentes)
+        Me.Controls.Add(Me.dgv_personalizado)
         Me.Name = "Form1"
         Me.Text = "Form1"
-        CType(Me.dgvDocentes, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgvGrupos, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents dgvDocentes As DataGridView
-    Friend WithEvents dgvGrupos As DataGridView
+    Friend WithEvents dgv_personalizado As DGVPaginado
 End Class

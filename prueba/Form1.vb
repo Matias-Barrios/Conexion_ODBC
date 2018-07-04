@@ -1,8 +1,8 @@
 ﻿Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Conectar(CONNECTION_STRING())
-        dgvGrupos.DataSource = Hacer_consulta("SELECT * FROM Grupos")
-        dgvDocentes.DataSource = Hacer_consulta("SELECT * FROM Personas WHERE tipo='Profesor'")
+        dgv_personalizado.Cargar_datos(Hacer_consulta("Select * FROM Personas"))
+
     End Sub
 
     Private Sub cerrar_ventana(sender As Object, e As System.Windows.Forms.FormClosingEventArgs) Handles Me.Closing
